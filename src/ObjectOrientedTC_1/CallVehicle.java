@@ -7,10 +7,19 @@ public class CallVehicle {
 
         Vehicle objectOfVehicle = new Vehicle();
 
-        objectOfVehicle.provideWheelsDetails();
-        //objectOfVehicle.summaryOfUserInput();
+        int abc = objectOfVehicle.provideWheelsDetails();
+        objectOfVehicle.summaryOfUserInput();
 
-        System.out.println(objectOfVehicle.provideWheelsDetails());
+        System.out.println("No. of Wheel are :"+abc);
+
+        Vehicle objectOfVehicle2 = new Vehicle();
+
+        objectOfVehicle2.provideWheelsDetails();
+        objectOfVehicle2.summaryOfUserInput();
+
+        //System.out.println(objectOfVehicle2.provideWheelsDetails());
+
+
 
     }
 }
