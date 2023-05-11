@@ -4,6 +4,7 @@ public class ArrayAssignment_2 {
 
     public static void main(String[] args) {
 
+        // Program to get frequency of elements in array
         int[] array = new int[]{2,40,2,40,6,4,3,4,4,5};
 
         for( int i=0;i<array.length;i++)

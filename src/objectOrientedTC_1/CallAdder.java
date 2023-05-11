@@ -1,4 +1,4 @@
-package ObjectOrientedTC_1;
+package objectOrientedTC_1;
 
 public class CallAdder {
 
