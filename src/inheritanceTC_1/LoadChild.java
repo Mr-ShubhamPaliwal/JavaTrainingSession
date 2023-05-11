@@ -14,6 +14,7 @@ public class LoadChild extends VehicleParent
     }
 
     // Child Method giving his & parent and functions
+    @Override
     public void printVehicleDetails(){
 
         super.printVehicleDetails();
