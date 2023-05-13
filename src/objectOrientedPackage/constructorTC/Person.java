@@ -1,4 +1,4 @@
-package objectOrientedPackage;
+package objectOrientedPackage.constructorTC;
 
 public class Person {
 

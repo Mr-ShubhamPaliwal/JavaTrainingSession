@@ -1,4 +1,4 @@
-package objectOrientedPackage;
+package objectOrientedPackage.adderTC;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package objectOrientedPackage;
+package objectOrientedPackage.constructorAssignment;
 
 import java.util.Scanner;
 
