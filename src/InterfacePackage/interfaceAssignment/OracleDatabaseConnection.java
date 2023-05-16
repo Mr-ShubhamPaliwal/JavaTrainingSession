@@ -1,33 +1,42 @@
 package InterfacePackage.interfaceAssignment;
 
-public class OracleDatabaseConnection implements DataBaseConnection{
+public class OracleDatabaseConnection implements DataBaseConnection {
 
+    String connectionDetails;
     Boolean isConnectionAlive;
 
 
     @Override
     public void connect(String connectionDetails) {
-        isConnectionAlive=true;
+
+        this.connectionDetails = connectionDetails;
+        System.out.println("Connection Established");
+        isConnectionAlive = true;
     }
 
     @Override
     public void disconnect() {
-        isConnectionAlive=false;
+        System.out.println("Disconnecting Connection");
+        isConnectionAlive = false;
     }
 
     @Override
     public String fireQuery(String query) {
-        return query;
+
+        if (isConnectionAlive) {
+            return "Query result - Table created";
+        } else {
+            return "You are not connected to data base, please establish connection first ";
+        }
     }
 
     @Override
-    public String checkConnection() {
+    public void checkConnectionStatus() {
 
-
-        if(isConnectionAlive){
-            return "Connection to Oracle is active";
-        }else{
-            return "Connection to Oracle is not active";
+        if (isConnectionAlive) {
+            System.out.println("Connection to oracle is Alive");
+        } else {
+            System.out.println("Connection to oracle is not Alive");
         }
 
     }

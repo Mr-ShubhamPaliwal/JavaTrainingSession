@@ -7,10 +7,13 @@ public class CallingClass {
         DataBaseConnection oracleConnection = xyz();
 
         oracleConnection.connect("Connection Link google.com");
-        String oracleResult = oracleConnection.fireQuery("jdjdhfjdh");
-        System.out.println(oracleResult);
+        oracleConnection.checkConnectionStatus();
+        String queryResult = oracleConnection.fireQuery("SQL Query");
+        System.out.println(queryResult);
         oracleConnection.disconnect();
-        System.out.println(oracleConnection.checkConnection());
+        oracleConnection.checkConnectionStatus();
+        queryResult = oracleConnection.fireQuery("SQL Query to create a Table");
+        System.out.println(queryResult);
 
 
     }
