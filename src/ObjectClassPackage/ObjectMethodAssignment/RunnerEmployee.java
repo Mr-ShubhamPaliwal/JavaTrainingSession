@@ -5,7 +5,7 @@ public class RunnerEmployee {
     public static void main(String[] args) {
 
         Employee e1 = new Employee(25,"Quality");
-        Employee e2 = new Employee(30,"HR");
+        Employee e2 = new Employee(30,"QUALITY");
         Employee e3 = new Employee(30,"HR");
 
         boolean b = e1.equals(e2);

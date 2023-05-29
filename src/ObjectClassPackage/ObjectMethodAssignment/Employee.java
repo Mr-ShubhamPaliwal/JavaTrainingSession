@@ -20,7 +20,7 @@ public class Employee {
 
         Employee abc = (Employee) o;
         boolean isEqaulsAge = this.age==abc.age;
-        boolean isAddressSame = this.address.equals(abc.address);
+        boolean isAddressSame = this.department.equals(abc.department);
 
 //        return isEqaulsAge && isAddressSame;
 
